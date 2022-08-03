@@ -1,0 +1,21 @@
+{
+  "title": "DeleteFileSFTP",
+  "description": "Delete a file of a sftp server.",
+  "docsUrl": "",
+  "buildType": "docker",
+  "credentials": {
+    "fields": {}
+  },
+  "triggers": {
+    "deletefilesftpnodejs": {
+      "title": "Delete a file inside a sftp server.",
+      "main": "./lib/triggers/processTrigger.js"
+    }
+  },
+  "actions": {
+    "getDataAction": {
+      "title": "Send information to another proccess",
+      "main": "./lib/actions/testAction.js"
+    }
+  }
+}
